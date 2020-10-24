@@ -61,41 +61,41 @@ const minLength= (len) => (val) => (val) && (val.length >= len);
                                 </Col>
                             </Row>
                             <Row className="form-group">
-                                <Label htmlFor="firstname" md={2}>First Name</Label>
-                                <Col md={10}>
-                                    <Control.text model=".firstname" id="firstname" name="firstname"
-                                        placeholder="First Name"
+                                <Label htmlFor="author" md={12}>Your Name</Label>
+                                <Col md={12}>
+                                    <Control.text model=".author" id="author" name="author"
+                                        placeholder="Your Name"
                                         className="form-control"
                                         validators={{
                                             required, minLength: minLength(3), maxLength: maxLength(15)
                                         }}
                                          />
-                                        <Errors 
+                                    <Errors
                                         className="text-danger"
-                                        model=".firstname"
+                                        model=".author"
                                         show="touched"
                                         messages={{
                                             required: 'Required',
                                             minLength: 'Must be greater than 2 characters',
                                             maxLength: 'Must be 15 characters or less'
                                         }}
-                                        />
+                                     />
                                 </Col>
                             </Row>
                         
                             
                             <Row className="form-group">
-                                <Label htmlFor="message" md={2}>Comment</Label>
-                                <Col md={10}>
-                                    <Control.textarea model=".message" id="message" name="message"
+                                <Label htmlFor="comment" md={12}>Comment</Label>
+                                <Col md={12}>
+                                    <Control.textarea model=".comment" id="comment" name="comment"
                                         rows="6"
                                         className="form-control" />
                                 </Col>
                             </Row>
                             <Row className="form-group">
-                                <Col md={{size:10, offset: 2}}>
+                                <Col md={{size:12}}>
                                     <Button type="submit" color="primary" onClick={this.toggleModal}>
-                                    Submit
+                                        Submit
                                     </Button>
                                 </Col>
                             </Row>
