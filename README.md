@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# A repo which holds the website built as Part of the Front-End Web Development with React.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
